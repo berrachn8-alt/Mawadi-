@@ -1,24 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Cairo:wght@600;700&family=Tajawal:wght@400;500;700&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 :root{
-  --orange:#FF7A00;
-  --navy:#1A2A4A;
+  --orange:#FF9A2E;
+  --orange-deep:#FF7A00;
+  --gold:#FFB347;
+  --navy:#0F1B2D;
+  --navy-2:#1A2A4A;
+  --navy-3:#1E2F4A;
+  --page-bg:#FFFFFF;
   --surface:#ffffff;
-  --bg:#F6F7F9;
-  --muted:#667085;
-  --line:#E8EAEE;
-  --soft:#FFF1E3;
-  --ink:#14213D;
+  --bg:#F7F4EE;
+  --muted:#F1F3F6;
+  --text:#1A2A4A;
+  --text-soft:#5B6B84;
+  --line:#E8EAF0;
+  --safe-area-inset-top: var(--safe-area-inset-top, 0px);
+}
+@media (prefers-color-scheme: dark){
+  :root{
+    --surface:#1E2F4A;
+    --bg:#F7F4EE;
+    --muted:#E9EDF3;
+    --text:#1A2A4A;
+    --text-soft:#5B6B84;
+    --line:#E8EAF0;
+  }
 }
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
-body{margin:0;background:var(--bg);color:var(--ink);font-family:"Segoe UI",Tahoma,Arial,sans-serif}
-button,input,select,textarea{font-family:inherit}
+body{margin:0;background:#FFFFFF;color:#1A2A4A;font-family:'Tajawal','Cairo','Segoe UI',Tahoma,sans-serif;font-weight:400}
+h1,h2,h3,h4,.font-black{font-family:'Cairo','Tajawal',sans-serif;font-weight:700;letter-spacing:normal}
+.font-title{font-family:'Amiri',serif;font-weight:700;letter-spacing:normal}
+.font-amiri{font-family:'Amiri',serif;font-weight:700}
+button{font-family:'Cairo','Tajawal',sans-serif;font-weight:700}
+input,select,textarea{font-family:'Tajawal','Cairo',sans-serif}
 input,select,textarea{outline:none}
-input:focus,select:focus,textarea:focus{border-color:var(--orange)!important;box-shadow:0 0 0 3px rgba(255,122,0,.14)}
+input:focus,select:focus,textarea:focus{border-color:var(--orange)!important;box-shadow:0 0 0 3px rgba(255,154,46,.18)}
 .no-scrollbar::-webkit-scrollbar{display:none}
 .no-scrollbar{scrollbar-width:none}
-.card-shadow{box-shadow:0 4px 18px rgba(26,42,74,.07)}
-.line-clamp-2{display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.site-title{font-family:'Amiri',serif;font-weight:700;font-size:36px;line-height:1.1;letter-spacing:normal;text-shadow:0 2px 14px rgba(0,0,0,.25)}
+.site-subtitle{font-family:'Tajawal','Cairo',sans-serif;font-size:15px;font-weight:500;color:rgba(255,255,255,.70)}
+.btn-gold{background:linear-gradient(135deg,#FF7A00,#FF9A2E);color:#fff;border-radius:9999px;box-shadow:0 8px 22px rgba(255,122,0,.28)}
+.header-luxury{background:linear-gradient(135deg,#0F1B2D 0%,#1A2A4A 100%);border-bottom:1px solid rgba(255,179,71,.55)}
+.hero-luxury{background:linear-gradient(135deg,#0F1B2D 0%,#1A2A4A 55%,#23395E 100%);border:1px solid rgba(255,179,71,.22)}
+.card-luxury{box-shadow:0 10px 28px rgba(0,0,0,.18)}
