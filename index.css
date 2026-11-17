@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root{
+  --orange:#FF7A00;
+  --navy:#1A2A4A;
+  --surface:#ffffff;
+  --bg:#F6F7F9;
+  --muted:#667085;
+  --line:#E8EAEE;
+  --soft:#FFF1E3;
+  --ink:#14213D;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:"Segoe UI",Tahoma,Arial,sans-serif}
+button,input,select,textarea{font-family:inherit}
+input,select,textarea{outline:none}
+input:focus,select:focus,textarea:focus{border-color:var(--orange)!important;box-shadow:0 0 0 3px rgba(255,122,0,.14)}
+.no-scrollbar::-webkit-scrollbar{display:none}
+.no-scrollbar{scrollbar-width:none}
+.card-shadow{box-shadow:0 4px 18px rgba(26,42,74,.07)}
+.line-clamp-2{display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
